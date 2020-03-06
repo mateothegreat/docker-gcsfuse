@@ -16,4 +16,4 @@ COPY --from=builder /tmp/sbin/mount.gcsfuse /usr/sbin
 
 COPY entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sh", "/entrypoint.sh"]
